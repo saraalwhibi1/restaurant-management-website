@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en" class="theme-1">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+
+  <body>
+
+
+    <header class="line">
+      <div class="logo left">
+        <img src="mmimages/mmlogo.png" alt="MANAGE ME LOGO" width = "150" height = "100" >
+      </div>
+
+      <div class='themes'>
+        <button onclick="setTheme('theme-1')" class="btn-primary">Dark mode</button>
+        <button onclick="setTheme('theme-2')" class="btn-primary">Light mode</button>
+      </div>
+      
+      <nav class="right">
+        <div class="line">
+          <div class="top-nav">
+            <p class="nav-text" onclick="togleTopNav();"></p>
+            <div id="top_nav_menu">
+              <ul class="right dropdown">
+                <li class="active-item">
+                  <a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="reservations.html" accesskey="r">Reservations</a></li>
+                <li><a href="menu.html" accesskey="m">Menu</a></li>
+                <li><a href="orders.html" accesskey="o">Orders</a></li>
+                <li><a href="ourstaff.html" accesskey="s">Our Staff</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+
+
+    <div class="page">
+      <div class="wrapper">
+
+        <main class="content-wrapper">
+
+
+          <div class="left-content center-text">
+
+            <h1>Welcome to Manage Me</h1>
+
+
+            <div id="home-slideshow" class="home-slideshow">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="mmimages/sliderbg2.png" style="width: 90%" />
+                  <h2 class="title">Our Story</h2>
+                  <div class="text">
+                    Manage Me, founded by Sara Alwhibi, Raghad Alshamrani,
+                    Ghadah Altuwaim and Najd Alnasrallah in 2021, is an industry
+                    leading restaurant management platform. We provide table
+                    reservations managment, staff rating mechanism and orders
+                    managment to restaurants to increase efficiency and revenue.
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <img src="mmimages//sliderbg2.png" style="width: 90%" />
+
+                  <h2 class="title">Our Mission & Vision</h2>
+                  <div class="text">
+                    With our passion for hospitality, we take pride in bringing
+                    together people and the restaurants they manage.
+                  </div>
+                </div>
+              </div>
+              <br />
+              
+              <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              </div>
+            </div>
+
+
+            <div id="home-about">
+              <!-- Our Story -->
+              <div id="story">
+                <article class="content">
+                  <h2 class="content-title">Our Story</h2>
+                  <p>
+                    Manage Me, founded by Sara Alwhibi, Raghad Alshamrani,
+                    Ghadah Altuwaim and Najd Alnasrallah in 2021, is an industry
+                    leading restaurant management platform. We provide table
+                    reservations managment, staff rating mechanism and orders
+                    managment to restaurants to increase efficiency and revenue.
+                  </p>
+                </article>
+              </div>
+
+              <!-- Our Mission & Vision -->
+              <div id="mission">
+                <article class="content">
+                  <h2 class="content-title">Our Mission & Vision</h2>
+                  <p>
+                    With our passion for hospitality, we take pride in bringing
+                    together people and the restaurants they manage.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+
+            
+            <div id="menu-list">
+              <div class="line">
+                <h2 class="content-title">Signature Meals</h2>
+                <div class="menu-list-container">
+                  <div class="menu-list-item">
+                    <a class="menu-list-item-description"
+                      ><div class="menu-list-text">
+                        <h4>Signature Sushi </h4>
+                      </div>
+                      <img src="img/menus/menu_01.jpg" alt="Signature Sushi"
+                    /></a>
+                  </div>
+                  <div class="menu-list-item">
+                    <a class="menu-list-item-description"
+                      ><div class="menu-list-text">
+                        <h4>Soufflé</h4>
+                      </div>
+                      <img src="img/menus/menu_02.jpg" alt="Soufflé"
+                    /></a>
+                  </div>
+                  <div class="menu-list-item">
+                    <a class="menu-list-item-description"
+                      ><div class="menu-list-text">
+                        <h4>Signature Mojito</h4>
+                      </div>
+                      <img src="img/menus/menu_03.ashx" alt="Signature Mohito"
+                    /></a>
+                  </div>
+                  <div class="menu-list-item">
+                    <a class="menu-list-item-description"
+                      ><div class="menu-list-text">
+                        <h4>Unagi Sushi</h4>
+                      </div>
+                      <img src="img/menus/menu_04.jpg" alt="Unagi Sushi"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+
+        </main>
+
+
+        <aside class="sidebar location center-text">
+          <h1>Location</h1>
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.786389803315!2d46.70712478455699!3d24.699868757757258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f030b790b8bf1%3A0x74edaa5821a6451!2z2YXZitin2LLZiA!5e0!3m2!1sar!2ssa!4v1636552199867!5m2!1sar!2ssa"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </aside>
+
+
+      </div>
+    </div>
+
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <footer>
+      <p>&#169;2021 Manage Me All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
+  </body>
+
+</html>

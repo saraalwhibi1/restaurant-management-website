@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en" class="theme-1">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+
+  <body>
+
+
+    <header class="line">
+      <div class="logo left">
+        <img src="mmimages/mmlogo.png" alt="MANAGE ME LOGO" width = "150" height = "100" >
+      </div>
+
+      <div class='themes'>
+        <button onclick="setTheme('theme-1')" class="btn-primary">Dark mode</button>
+        <button onclick="setTheme('theme-2')" class="btn-primary">Light mode</button>
+      </div>
+      
+      <nav class="right">
+        <div class="line">
+          <div class="top-nav">
+            <p class="nav-text" onclick="togleTopNav();"></p>
+            <div id="top_nav_menu">
+              <ul class="right dropdown">
+                <li class="active-item">
+                  <a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="reservations.html" accesskey="r">Reservations</a></li>
+                <li><a href="menu.html" accesskey="m">Menu</a></li>
+                <li><a href="orders.html" accesskey="o">Orders</a></li>
+                <li><a href="ourstaff.html" accesskey="s">Our Staff</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcrumbs line">
+        <p><a href="index.html">Home</a> &#62; Reservations</p>
+      </div>
+    </header>
+
+
+
+    <main>
+      <div class="sweetsmain">
+        <h1>Reservations</h1>
+
+        <div class="rows">
+          <div class="cols" style="width: 100%; background-color: rgba(238, 238, 238, 0.534)">
+            <form
+              id="order_form"
+              name="order_form"
+              action=""
+              class="rev-form"
+              onsubmit="return validateOrderForm();"
+            >
+              <div class="control-field">
+                <label for="guests" class="guests">Guests: </label>
+                <input
+                  type="text"
+                  class="name"
+                  name="guests"
+                  id="guests"
+                  value=""
+                />
+              </div>
+              <div class="control-field">
+                <label for="time" class="time">Time: </label>
+                <select name="time">
+                  <option>8am-11am</option>
+                  <option>12pm-4pm</option>
+                  <option>5pm-11pm</option>
+                </select>
+              </div>
+
+              <div class="control-field">
+                <label for="quantity" class="time">Table: </label><br />
+              </div>
+
+              <div class="control-field image-select">
+                <div class="r-image">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t1"
+                  value="t1"
+                  checked
+                />
+                <label for="t1" class="label"
+                  >T1: <span class="chairsNum">5</span> chairs</label
+                ></div>
+<div class="r-image">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t2"
+                  value="t2"
+                />
+                <label for="t2" class="label"
+                  >T2: <span class="chairsNum">3</span> chairs</label
+                >
+              </div>
+              <div class="r-image">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t3"
+                  value="t3"
+                />
+                <label for="t3" class="label"
+                  >T3: <span class="chairsNum">2</span> chairs</label
+                >
+                </div>
+                <div class="r-image">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t4"
+                  value="t4"
+                />
+                <label for="t4" class="label"
+                  >T4: <span class="chairsNum">4</span> chairs</label
+                ></div>
+                <div class="r-image">
+
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t5"
+                  value="t5"
+                />
+                <label for="t5" class="label"
+                  >T5: <span class="chairsNum">6</span> chairs</label
+                ></div>
+
+<div class="r-image">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t6"
+                  value="t6"
+                />
+                <label for="t6" class="label"
+                  >T6: <span class="chairsNum">4</span> chairs</label
+                >
+</div>
+<div class="r-image">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t7"
+                  value="t7"
+                />
+                <label for="t7" class="label"
+                  >T7: <span class="chairsNum">2</span> chairs</label
+                >
+</div>
+<div class="r-image">
+                <input
+                  type="radio"
+                  class="radio"
+                  name="table"
+                  id="t8"
+                  value="t8"
+                />
+                <label for="t8" class="label"
+                  >T8: <span class="chairsNum">3</span> chairs</label
+                >
+                </div>
+              </div>
+
+              <div class="control-field">
+                <label for="name" class="name">Name: </label>
+                <input
+                  type="text"
+                  class="name"
+                  name="name"
+                  id="name"
+                  value=""
+                />
+              </div>
+
+              <div class="control-field">
+                <label for="phone" class="phone">Phone number: </label>
+                <input
+                  type="text"
+                  class="phone"
+                  name="phone"
+                  id="phone"
+                  value=""
+                />
+              </div>
+
+              <div class="row">
+                <div class="center-text">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="validateOrderForm()"
+                  >
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    <script>
+
+      $(".r-image").click(function() {
+        if ($(this).find(".radio").is(':disabled'))
+        alert("this table not available.")
+      });
+
+      function validateOrderForm() {
+        var msg = "";
+        var myform = document.forms["order_form"];
+
+        var table = $("input[name=table]:checked", "#order_form");
+
+        var guests = myform.guests.value;
+        var time = myform.time.value;
+        var tableNo = table.val();
+        var name = myform.name.value;
+        var phone = myform.phone.value;
+
+        var userInfo = [guests, time, tableNo, name, phone];
+
+        if (guests == "") {
+          msg = "    * Number of Guests\n";
+        }
+        if (myform.time.value == "") {
+          msg = "    * Time \n";
+        }
+        if (myform.name.value == "") {
+          msg += "    * Customer name\n";
+        }
+        if (phone == "") {
+          msg += "    * phone number\n";
+        }
+
+        if (msg != "") {
+          alert("These fileds must be filled out \n" + msg);
+          return false;
+        }
+
+        var r = /^([A-Za-z ])+$/;
+        if (!r.test(myform.name.value)) {
+          alert("Name must contains only english charecters.");
+          return false;
+        }
+
+        var r = /\D$/i;
+        if (r.test(phone)) {
+          alert("Phone must be contains onyl digits.");
+          return false;
+        }
+
+        var r2 = /\D$/i;
+        if (r2.test(guests)) {
+          alert("Number of guests must be contains onyl digits.");
+          return false;
+        }
+
+        if (guests < 1 || guests > 8) {
+          alert("Number of guests must be [1 - 8].");
+          return false;
+        }
+
+        if (!isTableAvailabel(table.val())) {
+          alert("The selected tabel is not availabel.");
+          return false;
+        }
+
+        var chairsNum = $('label[for="' + table.val() + '"]')
+          .find(".chairsNum")
+          .text();
+
+        console.log(guests);
+        console.log(chairsNum);
+        if (guests > chairsNum) {
+          alert("capacity of the table is less than gustes number.");
+          return false;
+        }
+
+        var aaa;
+        console.log(userInfo);
+
+        var r = confirm("Do you want to save the reservation ?");
+        if (r == true) {
+          localStorage.setItem("reserved_tables_" + table.val(), userInfo);
+          myform.reset();
+          refreshReservations();
+
+          return true;
+        } else {
+          return false;
+        }
+      }
+      refreshReservations();
+      function refreshReservations() {
+        var reviews = "";
+        for (var i = 0; i < localStorage.length; i++) {
+          console.log(localStorage.key(i));
+
+          if (localStorage.key(i).includes("reserved_tables_"))
+         // $("#" + localStorage.key(i).replace("reserved_tables_", "")).addClass("reserved_table");
+            $("#" + localStorage.key(i).replace("reserved_tables_", "")).attr(
+              "disabled",
+              true
+            );
+        }
+      }
+
+      function isTableAvailabel(id) {
+        for (var i = 0; i < localStorage.length; i++) {
+          if (localStorage.key(i).includes("reserved_tables_"))
+            if (localStorage.key(i).replace("reserved_tables_", "") == id)
+              return false;
+        }
+        return true;
+      }
+    </script>
+
+
+    <footer>
+      <p>&#169;2021 Manage Me All rights reserved.</p>
+    </footer>
+
+
+  </body>
+
+</html>

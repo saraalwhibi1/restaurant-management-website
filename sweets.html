@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en" class="theme-1">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+
+  <body>
+
+
+    <header class="line">
+      <div class="logo left">
+        <img src="mmimages/mmlogo.png" alt="MANAGE ME LOGO" width = "150" height = "100" >
+      </div>
+
+      <div class='themes'>
+        <button onclick="setTheme('theme-1')" class="btn-primary">Dark mode</button>
+        <button onclick="setTheme('theme-2')" class="btn-primary">Light mode</button>
+      </div>
+      
+      <nav class="right">
+        <div class="line">
+          <div class="top-nav">
+            <p class="nav-text" onclick="togleTopNav();"></p>
+            <div id="top_nav_menu">
+              <ul class="right dropdown">
+                <li class="active-item">
+                  <a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="reservations.html" accesskey="r">Reservations</a></li>
+                <li><a href="menu.html" accesskey="m">Menu</a></li>
+                <li><a href="orders.html" accesskey="o">Orders</a></li>
+                <li><a href="ourstaff.html" accesskey="s">Our Staff</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcrumbs line">
+        <p>
+          <a href="index.html">Home</a> &#62; <a href="menu.html">Menu</a> &#62;
+          Sweets
+        </p>
+      </div>
+    </header>
+
+
+
+    <main>
+
+      <div class="sweetsmain">
+
+        <h1>Our Sweets</h1>
+
+        <div class="rows">
+          <div class="cols">
+            <img
+              src="mmimages/sweet2.jpeg"
+              alt="sweet-menu"
+              width="160"
+              height="190"
+            />
+            <h2>soufflé</h2>
+            <p>
+              Try our best seller, the chocolate soufflés light and spongy with
+              a rich chocolate sauce.
+            </p>
+            <div class="prices">
+              <p><br />Price: 35 SR</p>
+            </div>
+          </div>
+
+          <div class="cols">
+            <img
+              src="mmimages/sweet5.jpeg"
+              alt="sweet-menu2"
+              width="160"
+              height="190"
+            />
+            <h2>Pancakes</h2>
+            <p>A kind of Pancakes Incredibly fluffy and Extra thick</p>
+            <div class="prices">
+              <p><br />Price: 30 SR</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rows">
+          <div class="cols">
+            <img
+              src="mmimages/sweet3.jpeg"
+              alt="sweet-menu3"
+              width="160"
+              height="190"
+            />
+            <h2>Mizu yokan</h2>
+            <p>
+              Often enjoyed during the summer days, a chilled Japanese red bean
+              jelly with chestnut is a traditional sweet in Japan.
+            </p>
+            <div class="prices">
+              <p><br />Price: 44 SR</p>
+            </div>
+          </div>
+
+          <div class="cols">
+            <img
+              src="mmimages/sweet1.jpeg"
+              alt="sweet-menu4"
+              width="160"
+              height="190"
+            />
+            <h2>Taiyaki</h2>
+            <p>
+              It's a popular snack in japan, a warm fish-shape cake with red
+              bean filling.
+            </p>
+            <div class="prices">
+              <p><br />Price: 25 SR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>&#169;2021 All rights reserved.</p>
+    </footer>
+
+  </body>
+
+</html>

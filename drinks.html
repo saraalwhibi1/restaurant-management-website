@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en" class="theme-1">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+
+  <body>
+
+
+    <header class="line">
+      <div class="logo left">
+        <img src="mmimages/mmlogo.png" alt="MANAGE ME LOGO" width = "150" height = "100" >
+      </div>
+
+      <div class='themes'>
+        <button onclick="setTheme('theme-1')" class="btn-primary">Dark mode</button>
+        <button onclick="setTheme('theme-2')" class="btn-primary">Light mode</button>
+      </div>
+      
+      <nav class="right">
+        <div class="line">
+          <div class="top-nav">
+            <p class="nav-text" onclick="togleTopNav();"></p>
+            <div id="top_nav_menu">
+              <ul class="right dropdown">
+                <li class="active-item">
+                  <a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="reservations.html" accesskey="r">Reservations</a></li>
+                <li><a href="menu.html" accesskey="m">Menu</a></li>
+                <li><a href="orders.html" accesskey="o">Orders</a></li>
+                <li><a href="ourstaff.html" accesskey="s">Our Staff</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcrumbs line">
+        <p>
+          <a href="index.html">Home</a> &#62; <a href="menu.html">Menu</a> &#62;
+          Drinks
+        </p>
+      </div>
+    </header>
+
+
+
+    <main>
+
+      <div class="drinksmain">
+
+        <h1>Our Drinks</h1>
+
+        <div class="rown">
+          <div class="coln">
+            <img
+              src="mmimages/drink7.jpeg"
+              alt="sweet-menu"
+              width="160"
+              height="220"
+            />
+            <h2>Mix Berries</h2>
+            <p>
+              Fresh berries mixed with rosemary, lemon and topped off with
+              sparkling water.
+            </p>
+            <div class="prices">
+              <p><br />Price: 22 SR</p>
+            </div>
+          </div>
+
+          <div class="coln">
+            <img
+              src="mmimages/drink4.jpeg"
+              alt="drink-item"
+              width="160"
+              height="220"
+            />
+            <h2>Pomegranate Refresher</h2>
+            <p>
+              Fresh pomegranate juice mixed with lemon juice and rosemary sugar
+              syrup.
+            </p>
+            <div class="prices">
+              <p><br />Price: 25 SR</p>
+            </div>
+          </div>
+
+          <div class="coln">
+            <img
+              src="mmimages/drink1.jpeg"
+              alt="drink-item2"
+              width="160"
+              height="220"
+            />
+            <h2>Matcha Way</h2>
+            <p>
+              Matcha smoothie is full of antioxidants, vegan and gluten free
+              with a delicious blueberry mash.
+            </p>
+            <div class="prices">
+              <p><br />Price: 30 SR</p>
+            </div>
+          </div>
+
+          <div class="coln">
+            <img
+              src="mmimages/menu_03.ashx"
+              alt="drink-item3"
+              width="160"
+              height="220"
+            />
+            <h2>Sinature Mojito</h2>
+            <p>cold and fresh strawberry mojito mixed with lemon.</p>
+            <div class="prices">
+              <p><br />Price: 20 SR</p>
+            </div>
+          </div>
+
+          <div class="coln">
+            <img
+              src="mmimages/drink5.jpeg"
+              alt="drink-item4"
+              width="160"
+              height="220"
+            />
+            <h2>Latte</h2>
+            <p>A delicious blend from the best roasters in town to you.</p>
+            <div class="prices">
+              <p><br />Price: 15 SR</p>
+            </div>
+          </div>
+
+          <div class="coln">
+            <img
+              src="mmimages/drink6.jpeg"
+              alt="drink-item5"
+              width="160"
+              height="220"
+            />
+            <h2>Water</h2>
+            <p>A 330ml Mineral Water.</p>
+            <div class="prices">
+              <p><br />Price: 6 SR</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ################################################### -->
+      </div>
+
+    </main>
+
+    <footer>
+      <p>&#169;2021 All rights reserved.</p>
+    </footer>
+
+  </body>
+
+</html>

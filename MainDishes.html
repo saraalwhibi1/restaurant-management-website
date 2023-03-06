@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" class="theme-1">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+
+  <body>
+
+
+    <header class="line">
+      <div class="logo left">
+        <img src="mmimages/mmlogo.png" alt="MANAGE ME LOGO" width = "150" height = "100" >
+      </div>
+
+      <div class='themes'>
+        <button onclick="setTheme('theme-1')" class="btn-primary">Dark mode</button>
+        <button onclick="setTheme('theme-2')" class="btn-primary">Light mode</button>
+      </div>
+
+      <nav class="right">
+        <div class="line">
+          <div class="top-nav">
+            <p class="nav-text" onclick="togleTopNav();"></p>
+            <div id="top_nav_menu">
+              <ul class="right dropdown">
+                <li class="active-item">
+                  <a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="reservations.html" accesskey="r">Reservations</a></li>
+                <li><a href="menu.html" accesskey="m">Menu</a></li>
+                <li><a href="orders.html" accesskey="o">Orders</a></li>
+                <li><a href="ourstaff.html" accesskey="s">Our Staff</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcrumbs line">
+        <p>
+          <a href="index.html">Home</a> &#62; <a href="menu.html">Menu</a> &#62;
+          Main Dishes
+        </p>
+      </div>
+    </header>
+
+
+
+    <main>
+
+      <div class = "MainDishes">
+        <h1>Main Dishes</h1>
+
+        <div class = "dish1">
+        <img src="mmimages/dish4.jpg" alt="Signature">
+        <h3>Signauture</h3>
+        <p><br/>Shrimp tempura and cucumber, topped with Japanese mayo.</p>
+        <div class="prices">
+          <p><br/> Price: 45 SR </p> 
+        </div>
+      </div>
+
+        <div class = "dish2">
+        <img src="mmimages/dish1.png" alt="Dragoon roll">
+        <h3>Dragoon roll</h3>
+        <p><br/>Crab, crispy flakes, topped with fresh tuna and truffle oil.</p>
+        <div class="prices">
+          <p><br/> Price: 30 SR </p>
+       </div>
+      </div>
+
+        <div class = "dish3">
+        <img src="mmimages/dish2.jpg" alt="Sashimi">
+        <h3>Sashimi</h3>
+        <p><br/> rolled cone of seaweed, wrapped around rice and salmon.</p>
+        <div class="prices">
+          <p><br/> Price: 25 SR </p>
+        </div>
+      </div>
+
+      <div class = "dish4">
+        <img src="mmimages/sushi2.jpg" alt="Unagi Sushi">
+        <h3>Unagi Sushi</h3>
+        <p><br/>Shrimp tempura, avocado, green onion, topped with crispy flakes spicy & sweet saucde.</p>
+                <div class="prices">
+                  <p><br/>Price: 40 SR </p>
+        </div>
+      </div>
+
+
+        </div>
+
+        
+    </main>
+
+    <footer>
+      <p>&#169;2021 Manage Me All rights reserved.</p>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en" class="theme-1">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+
+  <body>
+
+
+    <header class="line">
+      <div class="logo left">
+        <img src="mmimages/mmlogo.png" alt="MANAGE ME LOGO" width = "150" height = "100" >
+      </div>
+
+      <div class='themes'>
+        <button onclick="setTheme('theme-1')" class="btn-primary">Dark mode</button>
+        <button onclick="setTheme('theme-2')" class="btn-primary">Light mode</button>
+      </div>
+      
+      <nav class="right">
+        <div class="line">
+          <div class="top-nav">
+            <p class="nav-text" onclick="togleTopNav();"></p>
+            <div id="top_nav_menu">
+              <ul class="right dropdown">
+                <li class="active-item">
+                  <a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="reservations.html" accesskey="r">Reservations</a></li>
+                <li><a href="menu.html" accesskey="m">Menu</a></li>
+                <li><a href="orders.html" accesskey="o">Orders</a></li>
+                <li><a href="ourstaff.html" accesskey="s">Our Staff</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcrumbs">
+        <p><a href="index.html">Home</a> &#62; Our Staff</p>
+      </div>
+    </header>
+
+
+
+    <div class="page">
+      <div class="wrapper">
+
+
+        <main class="content-wrapper">
+
+          <div class="staffmain">
+
+          <h2 class="stafftitle">Our Staff</h2>
+
+          <div class="our-staff">
+            <div class="container">
+              <div class="rowST">
+                
+                <div class="box-bg colST">
+                  <div class="client-img">
+                    <img
+                      src="mmimages/staff4.jfif"
+                      class="img-fluid"
+                      alt="staff nora ahmed pic"
+                    />
+                  </div>
+                  <div class="details">
+                    <h4 class="text-center">Nora Ahmed</h4>
+                    <h4 class="text-center">Head Manager</h4>
+                    <h4 class="text-center">Female</h4>
+                    <div class="rating rating1">
+                      <input class="star" type="radio" id="star5-1" name="rating1" value="5" /><label for="star5-1" title="Rocks!"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star4-1" name="rating1" value="4" /><label for="star4-1" title="Pretty good"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star3-1" name="rating1" value="3" /><label for="star3-1" title="Meh"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star2-1" name="rating1" value="2" /><label for="star2-1" title="Kinda bad"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star1-1" name="rating1" value="1" /><label for="star1-1" title="Sucks big time"><span>&#9733</span></label>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="box-bg colST">
+                  <div class="client-img">
+                    <img
+                      src="mmimages/staff1.jpg"
+                      class="img-fluid"
+                      alt="staff ahmed ali pic"
+                    />
+                  </div>
+                  <div class="details">
+                    <h4 class="text-center">Ahmed Ali</h4>
+                    <h4 class="text-center">Bartender</h4>
+                    <h4 class="text-center">Male</h4>
+                    <div class="rating rating2">
+                      <input class="star" type="radio" id="star5-2" name="rating2" value="5" /><label for="star5-2" title="Rocks!"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star4-2" name="rating2" value="4" /><label for="star4-2" title="Pretty good"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star3-2" name="rating2" value="3" /><label for="star3-2" title="Meh"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star2-2" name="rating2" value="2" /><label for="star2-2" title="Kinda bad"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star1-2" name="rating2" value="1" /><label for="star1-2" title="Sucks big time"><span>&#9733</span></label>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="box-bg colST">
+                  <div class="client-img">
+                    <img
+                      src="mmimages/staff5.jfif"
+                      class="img-fluid"
+                      alt="staff sara ali pic"
+                    />
+                  </div>
+                  <div class="details">
+                    <h4 class="text-center">Sara Ali</h4>
+                    <h4 class="text-center">Bartender</h4>
+                    <h4 class="text-center">Female</h4>
+                    <div class="rating rating3">
+                      <input class="star" type="radio" id="star5-3" name="rating3" value="5" /><label for="star5-3" title="Rocks!"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star4-3" name="rating3" value="4" /><label for="star4-3" title="Pretty good"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star3-3" name="rating3" value="3" /><label for="star3-3" title="Meh"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star2-3" name="rating3" value="2" /><label for="star2-3" title="Kinda bad"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star1-3" name="rating3" value="1" /><label for="star1-3" title="Sucks big time"><span>&#9733</span></label>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="box-bg colST">
+                  <div class="client-img">
+                    <img
+                      src="mmimages/staff6.jfif"
+                      class="img-fluid"
+                      alt="staff mona saleh pic"
+                    />
+                  </div>
+                  <div class="details">
+                    <h4 class="text-center">Mona Saleh</h4>
+                    <h4 class="text-center">Server</h4>
+                    <h4 class="text-center">Female</h4>
+                    <div class="rating rating4">
+                      <input class="star" type="radio" id="star5-4" name="rating4" value="5" /><label for="star5-4" title="Rocks!"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star4-4" name="rating4" value="4" /><label for="star4-4" title="Pretty good"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star3-4" name="rating4" value="3" /><label for="star3-4" title="Meh"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star2-4" name="rating4" value="2" /><label for="star2-4" title="Kinda bad"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star1-4" name="rating4" value="1" /><label for="star1-4" title="Sucks big time"><span>&#9733</span></label>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="box-bg colST">
+                  <div class="client-img">
+                    <img
+                      src="mmimages/staff2.jpg"
+                      class="img-fluid"
+                      alt="staff omar saleh pic"
+                    />
+                  </div>
+                  <div class="details">
+                    <h4 class="text-center">Omar Saleh</h4>
+                    <h4 class="text-center">Chef</h4>
+                    <h4 class="text-center">Male</h4>
+                    <div class="rating rating5">
+                      <input class="star" type="radio" id="star5-5" name="rating5" value="5" /><label for="star5-5" title="Rocks!"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star4-5" name="rating5" value="4" /><label for="star4-5" title="Pretty good"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star3-5" name="rating5" value="3" /><label for="star3-5" title="Meh"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star2-5" name="rating5" value="2" /><label for="star2-5" title="Kinda bad"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star1-5" name="rating5" value="1" /><label for="star1-5" title="Sucks big time"><span>&#9733</span></label>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="box-bg colST">
+                  <div class="client-img">
+                    <img
+                      src="mmimages/staff3.png"
+                      class="img-fluid"
+                      alt="staff khaled aziz pic"
+                    />
+                  </div>
+                  <div class="details">
+                    <h4 class="text-center">Khaled Aziz</h4>
+                    <h4 class="text-center">General Manager</h4>
+                    <h4 class="text-center">Male</h4>
+                    <div class="rating rating6">
+                      <input class="star" type="radio" id="star5-6" name="rating6" value="5" /><label for="star5-6" title="Rocks!"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star4-6" name="rating6" value="4" /><label for="star4-6" title="Pretty good"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star3-6" name="rating6" value="3" /><label for="star3-6" title="Meh"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star2-6" name="rating6" value="2" /><label for="star2-6" title="Kinda bad"><span>&#9733</span></label>
+                      <input class="star" type="radio" id="star1-6" name="rating6" value="1" /><label for="star1-6" title="Sucks big time"><span>&#9733</span></label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        </main>
+
+
+      </div>
+    </div>
+
+
+    <script>
+      $(document).ready(function () {
+        /* 1. Visualizing things on Hover - See next part for action on click */
+        $(".rating radio")
+          .on("mouseover", function () {
+            var onStar = parseInt($(this).data("value"), 10); // The star currently mouse on
+
+            // Now highlight all the stars that's not after the current hovered star
+            $(this)
+              .parent()
+              .children("radio")
+              .each(function (e) {
+                if (e < onStar) {
+                  $(this).addClass("hover");
+                } else {
+                  $(this).removeClass("hover");
+                }
+              });
+          })
+          .on("mouseout", function () {
+            $(this)
+              .parent()
+              .children("radio")
+              .each(function (e) {
+                $(this).removeClass("hover");
+              });
+          });
+
+        $(".rating44 .star") // select the radio by its id
+          .change(function () {
+            // bind a function to the change event
+            if ($(this).is(":checked")) {
+              // check if the radio is checked
+              var val = $this.name; // retrieve the value
+              console.log(val);
+            }
+          });
+
+        $(".rating .star").each(function (e) {
+          calcAvgRate(this);
+        });
+
+        $(".rating .star").click(function () {
+          var name = this.name;
+          var val = parseInt(this.value);
+
+          var newValue = [0, 0];
+          var oldValue = JSON.parse(localStorage.getItem("rating_" + name));
+          if (oldValue) {
+            var count = oldValue[0];
+            var sum = oldValue[1];
+
+            console.log(count + "  " + sum + "   " + oldValue);
+
+            newValue[0] = count + 1;
+            newValue[1] = (parseInt(sum) + parseInt(val)) / (count + 1);
+          } else {
+            newValue = [1, val];
+          }
+
+          localStorage.setItem("rating_" + name, JSON.stringify(newValue));
+
+          calcAvgRate(this);
+        });
+
+        function calcAvgRate(elem) {
+          var name = elem.name;
+          var value = JSON.parse(localStorage.getItem("rating_" + name));
+
+          if (value) {
+            var count = parseInt(value[0]);
+            var sum = parseInt(value[1]);
+            var avg = Math.round(sum / count);
+
+            //elem.value = avg;
+
+            console.log(avg);
+            console.log(name);
+
+            var $radios = $("input:radio[name=" + name + "]");
+            //if($radios.is(':checked') === false) {
+            $radios.filter("[value=" + avg + "]").prop("checked", true);
+            // }
+          }
+        }
+
+        /* 2. Action to perform on click */
+        $(".rating .star").on("click", function () {
+          var onStar = parseInt($(this).data("value"), 10); // The star currently selected
+          var stars = $(this).parent().children("radio");
+
+          for (i = 0; i < stars.length; i++) {
+            $(stars[i]).removeClass("checked");
+          }
+
+          for (i = 0; i < onStar; i++) {
+            $(stars[i]).addClass("checked");
+          }
+          //console.log($(this));
+          // JUST RESPONSE (Not needed)
+          var ratingValue = parseInt(
+            $(".rating radio.checked").last().data("value"),
+            10
+          );
+          var msg = "";
+          //console.log(ratingValue);
+          if (ratingValue > 1) {
+            msg = "Thanks! You rated this " + ratingValue + " stars.";
+          } else {
+            msg =
+              "We will improve ourselves. You rated this " +
+              ratingValue +
+              " stars.";
+          }
+          responseMessage(msg);
+        });
+      });
+
+      function responseMessage(msg) {
+        $(".success-box").fadeIn(200);
+        $(".success-box div.text-message").html("<span>" + msg + "</span>");
+      }
+    </script>
+
+
+    <footer>
+      <p>&#169;2021 Manage Me All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en" class="theme-1">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+
+  <body>
+
+
+    <header class="line">
+      <div class="logo left">
+        <img src="mmimages/mmlogo.png" alt="MANAGE ME LOGO" width = "150" height = "100" >
+      </div>
+
+      <div class='themes'>
+        <button onclick="setTheme('theme-1')" class="btn-primary">Dark mode</button>
+        <button onclick="setTheme('theme-2')" class="btn-primary">Light mode</button>
+      </div>
+      
+      <nav class="right">
+        <div class="line">
+          <div class="top-nav">
+            <p class="nav-text" onclick="togleTopNav();"></p>
+            <div id="top_nav_menu">
+              <ul class="right dropdown">
+                <li class="active-item">
+                  <a href="index.html" accesskey="h">Home</a></li>
+                <li><a href="reservations.html" accesskey="r">Reservations</a></li>
+                <li><a href="menu.html" accesskey="m">Menu</a></li>
+                <li><a href="orders.html" accesskey="o">Orders</a></li>
+                <li><a href="ourstaff.html" accesskey="s">Our Staff</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcrumbs line">
+        <p><a href="index.html">Home</a> &#62; Our Menu</p>
+      </div>
+    </header>
+
+
+
+    <div class="page">
+      <div class="wrapper">
+
+        <main class="menumain">
+
+          <h1>Our Menu</h1>
+
+          <div id="menu-list">
+            <div class="line">
+              <div class="menu-list-container">
+                <div class="menu-list-item">
+                  <a href="MainDishes.html" class="menu-list-item-description"
+                    ><div class="menu-list-text">
+                      <h4>Main Dishes</h4>
+                    </div>
+                    <img src="mmimages/sushimain.jpeg" alt="mainheader"
+                  /></a>
+                </div>
+                <div class="menu-list-item">
+                  <a href="sweets.html" class="menu-list-item-description"
+                    ><div class="menu-list-text">
+                      <h4>Sweets</h4>
+                    </div>
+                    <img src="mmimages/sweet5.jpeg" alt="Sweets"
+                  /></a>
+                </div>
+                <div class="menu-list-item">
+                  <a href="drinks.html" class="menu-list-item-description"
+                    ><div class="menu-list-text">
+                      <h4>Drinks</h4>
+                    </div>
+                    <img src="mmimages/menu_03.ashx" alt="Drinks"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+      </div>
+    </div>
+
+    <footer>
+      <p>&#169;2021 Manage Me All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+
+  </body>
+
+</html>
